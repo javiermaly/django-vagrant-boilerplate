@@ -1,0 +1,12 @@
+{
+    "project_name": "Nombre de tu proyecto",
+    "repo_name": "Nombre del directorio de tu proyecto",
+    "author_name": "Tu nombre",
+    "email": "Tu email",
+    "description": "Descripción de tu proyecto",
+    "domain_name": "example.com",
+    "company": "Nombre de tu empresa",
+    "license": "MIT",
+    "year": "2014",
+    "version": "0.1.0"
+}

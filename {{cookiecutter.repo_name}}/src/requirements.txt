@@ -1,0 +1,12 @@
+uwsgi
+whitenoise
+pillow
+coverage
+psycopg2
+django
+django-bower
+django-storages
+django-pipeline
+django-grappelli
+django-getenv
+django-debug-toolbar

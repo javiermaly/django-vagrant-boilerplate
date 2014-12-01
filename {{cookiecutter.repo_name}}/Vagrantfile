@@ -1,0 +1,13 @@
+# Vagrant config for {{cookiecutter.project_name}}
+
+Vagrant.configure("2") do |config|
+    config.vm.box = "ubuntu/trusty64"
+    config.vm.network "forwarded_port", guest: 8000, host: 8000
+    config.vm.network "forwarded_port", guest: 5000, host: 5000
+    config.vm.synced_folder "src", "/home/vagrant/project/"
+
+    config.vm.provision "file", source: "config/Envfile", destination: "/home/vagrant/.Envfile"
+    config.vm.provision "shell", keep_color: true, privileged: false, path: "config/init.sh"
+    config.vm.provision "shell", keep_color: true, privileged: false, path: "config/packages.sh"
+    config.vm.provision "shell", keep_color: true, privileged: false, path: "config/setup.sh"
+end
