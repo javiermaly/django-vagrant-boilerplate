@@ -14,7 +14,6 @@ El proyecto esta pensando para crear aplicaciones 12 factor http://12factor.net/
 - Pillow para manipulacion de imagenes https://pypi.python.org/pypi/Pillow/
 - Django Debug Toolbar para un facil debug http://django-debug-toolbar.readthedocs.org/
 - Django Pipeline para el manejo de assets y compresion de assets y html en producción http://django-pipeline.readthedocs.org/
-- Django Storages para subir archivos a S3 u otro cloud storage https://django-storages.readthedocs.org/en/latest/
 - Django Grappelli para customizar el panel de adimnistración http://grappelliproject.com/
 - Django getenv para configurar via variables de entorno las settings del framework https://pypi.python.org/pypi/django-getenv
 - Uwsgi para cargar la aplicación en un servidor http en docker https://uwsgi-docs.readthedocs.org/en/latest/

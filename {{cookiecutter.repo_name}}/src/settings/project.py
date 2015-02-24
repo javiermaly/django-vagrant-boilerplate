@@ -15,12 +15,6 @@ INSTALLED_APPS += (
 
 GRAPPELLI_ADMIN_TITLE = "Admin"
 
-if not DEBUG:
-    DEFAULT_FILE_STORAGE = 'storages.backends.s3.S3Storage'
-    AWS_ACCESS_KEY_ID = env('DJANGO_AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = env('DJANGO_AWS_SECRET_ACCESS_KEY')
-    AWS_STORAGE_BUCKET_NAME = env('DJANGO_AWS_STORAGE_BUCKET_NAME')
-
 PIPELINE_CSS = {
     'stylesheets': {
         'source_filenames': (

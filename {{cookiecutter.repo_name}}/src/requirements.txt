@@ -4,7 +4,6 @@ pillow
 coverage
 psycopg2
 django
-django-storages
 django-pipeline
 django-grappelli
 django-getenv
