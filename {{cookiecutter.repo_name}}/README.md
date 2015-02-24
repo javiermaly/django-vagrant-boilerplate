@@ -55,7 +55,6 @@ Los siguientes pasos son opcionales:
 - __bin/startapp \<app-name\>__ Crea una nueva app.
 - __bin/pip__ Instala todos los paquetes definidos en el requirements.txt.
 - __bin/debugsqlshell__ Muestra la shell de debug-toolbar.
-- __bin/bower \<commndo\>__ Maneja bower desde fuera de la VM usando django-bower.
 - __bin/manage \<comando\>__ Ejecuta comandos con manage.py.
 - __bin/exec \<comando\>__ Ejecuta comandos en bash.
 - __bin/psql__ Ejecuta la shell de postgres.
@@ -68,7 +67,6 @@ Los siguientes pasos son opcionales:
 - Ejecutar __vagrant up__ para crear la maquina virtual y provisionarla con todo lo necesario.
 - Ejecutar __bin/migrate__ para crear las tablas principales.
 - Ejecutar __bin/createsuperuser__ para crear el usuario de administración.
-- Ejecutar __bin/bower__ para instalar las dependencias del frontend.
 - Ejecutar __bin/runserver__ para correr el servidor de desarrollo.
 
 NOTA: Para para poder acceder a la aplicación se hace por http://127.0.0.1:8000.
@@ -77,7 +75,6 @@ NOTA: Para para poder acceder a la aplicación se hace por http://127.0.0.1:8000
 
 - Ejecutar __vagrant up__ para encender la maquina virtual.
 - Ejecutar __bin/migrate__ para actualizar la base de datos en caso de usar migraciones.
-- Ejecutar __bin/bower__ para instalar las dependencias del frontend.
 - Ejecutar __bin/runserver__ para correr el servidor de desarrollo.
 
 ## Deployment con Docker ##

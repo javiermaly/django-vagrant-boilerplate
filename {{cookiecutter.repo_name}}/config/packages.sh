@@ -35,7 +35,6 @@ echo "### Install node packages"
 echo "################################################"
 
 npm install yuglify
-npm install bower
 
 echo "################################################"
 echo "### Install pgweb"

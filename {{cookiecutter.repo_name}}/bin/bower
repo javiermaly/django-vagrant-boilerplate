@@ -1,2 +1,0 @@
-#!/bin/bash
-ssh -F config/ssh_config -q -t default "bash -l -c 'cd /home/vagrant/project && python manage.py bower $@'"

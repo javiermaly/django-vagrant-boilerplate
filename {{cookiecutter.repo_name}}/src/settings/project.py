@@ -21,15 +21,9 @@ if not DEBUG:
     AWS_SECRET_ACCESS_KEY = env('DJANGO_AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME = env('DJANGO_AWS_STORAGE_BUCKET_NAME')
 
-BOWER_INSTALLED_APPS = (
-    'jquery',
-    'bootstrap'
-)
-
 PIPELINE_CSS = {
     'stylesheets': {
         'source_filenames': (
-            'bootstrap/dist/css/bootstrap.min.css',
         ),
         'output_filename': 'stylesheets.css',
         'extra_context': {
@@ -41,8 +35,6 @@ PIPELINE_CSS = {
 PIPELINE_JS = {
     'scripts': {
         'source_filenames': (
-            'jquery/dist/jquery.min.js',
-            'bootstrap/dist/js/bootstrap.min.js',
         ),
         'output_filename': 'scripts.js',
     }

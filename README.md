@@ -17,7 +17,6 @@ El proyecto esta pensando para crear aplicaciones 12 factor http://12factor.net/
 - Django Storages para subir archivos a S3 u otro cloud storage https://django-storages.readthedocs.org/en/latest/
 - Django Grappelli para customizar el panel de adimnistración http://grappelliproject.com/
 - Django getenv para configurar via variables de entorno las settings del framework https://pypi.python.org/pypi/django-getenv
-- Django bower para gestionar dependencias con bower https://django-bower.readthedocs.org/en/latest/
 - Uwsgi para cargar la aplicación en un servidor http en docker https://uwsgi-docs.readthedocs.org/en/latest/
 - Whitenoise para servir archivos estaticos https://github.com/evansd/whitenoise
 

@@ -100,17 +100,14 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'assets/theme'),
+    os.path.join(BASE_DIR, 'assets'),
 )
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'pipeline.finders.PipelineFinder',
-    'djangobower.finders.BowerFinder'
 )
 STATICFILES_STORAGE = 'pipeline.storage.PipelineStorage'
-BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'assets/components')
-BOWER_PATH = '/home/vagrant/node_modules/bower/bin/bower'
 
 
 ##
@@ -147,7 +144,6 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pipeline',
-    'djangobower',
     'storages'
 )
 
