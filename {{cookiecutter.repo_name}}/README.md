@@ -65,7 +65,7 @@ Los siguientes pasos son opcionales:
 ### Comandos para ejecutar dentro de la VM desde el host ###
 
 - __bin/shell__ Muestra la shell de Django.
-- __bin/runserver__ Ejecuta el servidor de desarrollo y se vuelve accesible por http://127.0.0.1:8000 en la maquina host.
+- __bin/runserver__ Ejecuta el servidor de desarrollo y se vuelve accesible por http://{{cookiecutter.vm_hostname}}.lo:8000 en la maquina host.
 - __bin/migrate__ Instala toda las migraciones en la base de datos.
 - __bin/makemigrations__ Crea migraciones.
 - __bin/makemessages \<paarametros\>__ Crea archivos de lenguaje.
@@ -76,7 +76,7 @@ Los siguientes pasos son opcionales:
 - __bin/manage \<comando\>__ Ejecuta comandos con manage.py.
 - __bin/exec \<comando\>__ Ejecuta comandos en bash.
 - __bin/psql__ Ejecuta la shell de postgres.
-- __bin/pgweb__ Ejecuta pgweb un frontend web para postgres accesible desde http://localhost:5000.
+- __bin/pgweb__ Ejecuta pgweb un frontend web para postgres accesible desde http://{{cookiecutter.vm_hostname}}.lo:5000.
 
 ### Workflow de ejemplo ###
 
