@@ -1,7 +1,7 @@
 {
     "project_name": "Nombre de tu proyecto",
     "repo_name": "Nombre del directorio de tu proyecto",
-    "vm_hostname": "Hostname para la maquina virtual"
+    "vm_hostname": "Hostname para la maquina virtual",
     "author_name": "Tu nombre",
     "email": "Tu email",
     "description": "Descripción de tu proyecto",
