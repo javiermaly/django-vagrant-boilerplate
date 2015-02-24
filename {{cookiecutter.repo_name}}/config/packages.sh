@@ -40,7 +40,7 @@ echo "################################################"
 echo "### Install pgweb"
 echo "################################################"
 
-wget -O pgweb.zip https://github.com/sosedoff/pgweb/releases/download/v0.4.0/pgweb_linux_386.zip
+wget -O pgweb.zip https://github.com/sosedoff/pgweb/releases/download/v0.5.0/pgweb_linux_386.zip
 unzip pgweb.zip
 rm -rf pgweb.zip
 mv pgweb_linux_386 ~/.local/bin/pgweb
