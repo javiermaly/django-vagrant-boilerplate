@@ -1,5 +1,3 @@
-uwsgi
-whitenoise
 pillow
 coverage
 psycopg2
