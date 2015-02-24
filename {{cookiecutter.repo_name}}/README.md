@@ -53,8 +53,6 @@ Los siguientes pasos son opcionales:
 - Si se necesitan instalar paquetes en el entorno de desarrollo se puede editar __config/packages.sh__.
 - Si se necesita configurar algo en el entorno de desarrollo se puede editar __config/setup.sh__.
 - Si se necesitan instalar paquetes en python se puede editar __src/requirements.txt__.
-- Si se necesitan modificar el proceso que ejecuta la aplicación en docker se puede editar __src/Procfile__.
-- Si se necesitan modificar los pasos de instalación de la aplicación en docker se puede editar __Dockerfile__.
 
 ### Manejando maquinas virtuales con vagrant ###
 

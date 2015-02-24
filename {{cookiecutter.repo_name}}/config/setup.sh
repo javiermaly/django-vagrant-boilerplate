@@ -4,11 +4,9 @@ echo "################################################"
 echo "### Configure directories"
 echo "################################################"
 
-mkdir -p project/assets/components
-mkdir -p project/assets/theme
+mkdir -p project/assets
 mkdir -p project/locale
 mkdir -p project/media
-touch project/media/index.html
 
 echo "################################################"
 echo "### Configure database"

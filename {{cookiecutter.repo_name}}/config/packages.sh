@@ -27,7 +27,6 @@ echo "################################################"
 echo "### Install python packages"
 echo "################################################"
 
-pip install --user python-dotenv honcho
 pip install --user -r project/requirements.txt
 
 echo "################################################"
