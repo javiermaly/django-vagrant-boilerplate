@@ -24,3 +24,5 @@ nosetests.xml
 
 # Django config
 config/Envfile
+src/media/
+src/static/

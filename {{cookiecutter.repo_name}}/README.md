@@ -12,14 +12,34 @@
 
 ## Como usar el entorno de desarrollo ##
 
-### Instalar Vagrant ###
+### Instalar Vagrant y plugins ###
 
 Vagrant y virtualbox se puede descargar de sus sitios para cualquier plataforma, si su sistema operativo (linux) tiene repositorios
 que se pueden usar tambien.
 
 - Virtual box: https://www.virtualbox.org
 - Vagrant: http://www.vagrantup.com
+- Vagrant landrush plugin: https://github.com/phinze/landrush
 
+Para instalar el plugin solo es necesario:
+
+  $ vagrant plugin install landrush
+
+### Descripción del entorno de desarrollo ###
+
+El proyecto esta pensando para crear aplicaciones 12 factor http://12factor.net/ se genera tanto un entorno de desarrollo en vagrant.
+
+- Vagrant para generar el entorno de desarrollo https://www.vagrantup.com/
+- Django 1.7 como framework de desarrollo https://www.djangoproject.com/
+- PostgreSQl como base de datos http://www.postgresql.org/
+- PsycoPG2 como driver de Postgres http://initd.org/psycopg/
+- Pillow para manipulacion de imagenes https://pypi.python.org/pypi/Pillow/
+- Django Debug Toolbar para facilitar el debug de Django http://django-debug-toolbar.readthedocs.org/
+- Django Pipeline para el manejo y compresión de assets y html en producción http://django-pipeline.readthedocs.org/
+- Django Grappelli para customizar el panel de adimnistración http://grappelliproject.com/
+- Django getenv para configurar via variables de entorno las settings de Django https://pypi.python.org/pypi/django-getenv
+
+Al crear la maquina virtual se podrá acceder desde el siguiente dominio local: {{cookiecutter.vm_hostname}}.lo
 
 ### Configuración de archivos  ###
 
@@ -69,24 +89,10 @@ Los siguientes pasos son opcionales:
 - Ejecutar __bin/createsuperuser__ para crear el usuario de administración.
 - Ejecutar __bin/runserver__ para correr el servidor de desarrollo.
 
-NOTA: Para para poder acceder a la aplicación se hace por http://127.0.0.1:8000.
+*NOTA: Para para poder acceder a la aplicación se hace por http://{{cookiecutter.vh_hostname}}.lo:8000.*
 
 #### Retomando el desarrollo ya existente en un equipo ####
 
 - Ejecutar __vagrant up__ para encender la maquina virtual.
 - Ejecutar __bin/migrate__ para actualizar la base de datos en caso de usar migraciones.
 - Ejecutar __bin/runserver__ para correr el servidor de desarrollo.
-
-## Deployment con Docker ##
-
-Para crear la imagen contenedora para producción solo es necesario crearla con docker
-
-```
-  docker build -t company/app-name .
-```
-
-Y correr la imagen para generar un contenedor
-
-```
-  docker run -d -p 8000:8000 -e 'DJANGO_DEBUG=False' -e 'DJANGO_DATABASE_HOST=host.com' -e 'DJANGO_DATABASE_PORT=5432' -e 'DJANGO_DATABASE_NAME=test' -e 'DJANGO_DATABASE_USER=test' -e 'DJANGO_DATABASE_PASSWORD=test' -e 'DJANGO_EMAIL_HOST_USER=user@host.com' -e 'DJANGO_EMAIL_HOST_PASSWORD=mypassword' -e 'DJANGO_EMAIL_HOST=smtp.host.com' -e 'DJANGO_EMAIL_USE_TLS=True' -e 'DJANGO_EMAIL_PORT=587' company/app-name
-```

@@ -1,13 +1,22 @@
 # Vagrant config for {{cookiecutter.project_name}}
 
 Vagrant.configure("2") do |config|
+
+    config.landrush.enabled = true
+    config.landrush.tld = "lo"
+
     config.vm.box = "ubuntu/trusty64"
-    config.vm.network "forwarded_port", guest: 8000, host: 8000
-    config.vm.network "forwarded_port", guest: 5000, host: 5000
+    config.vm.host_name = "{{cookiecutter.vm_hostname}}.lo"
+    config.vm.network "private_network", type: "dhcp"
     config.vm.synced_folder "src", "/home/vagrant/project/"
+
+    config.ssh.forward_agent = true
+    config.ssh.insert_key = false
 
     config.vm.provision "file", source: "config/Envfile", destination: "/home/vagrant/.Envfile"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/init.sh"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/packages.sh"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/setup.sh"
+
+    config.vm.post_up_message = "Puedes acceder a la VM usando la siguiente dirección: {{cookiecutter.vm_hostname}}.lo"
 end
