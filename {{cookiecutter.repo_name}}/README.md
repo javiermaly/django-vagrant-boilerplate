@@ -35,9 +35,10 @@ El proyecto esta pensando para crear aplicaciones 12 factor http://12factor.net/
 - PsycoPG2 como driver de Postgres http://initd.org/psycopg/
 - Pillow para manipulacion de imagenes https://pypi.python.org/pypi/Pillow/
 - Django Debug Toolbar para facilitar el debug de Django http://django-debug-toolbar.readthedocs.org/
-- Django Pipeline para el manejo y compresión de assets y html en producción http://django-pipeline.readthedocs.org/
+- Django Compressor para comprimir archivos CSS y JS linkeados http://django-compressor.readthedocs.org/en/latest/
+- Django HtmlMin para comprimir el HTML https://pypi.python.org/pypi/django-htmlmin
 - Django Grappelli para customizar el panel de adimnistración http://grappelliproject.com/
-- Django getenv para configurar via variables de entorno las settings de Django https://pypi.python.org/pypi/django-getenv
+- Django Getenv para configurar via variables de entorno las settings de Django https://pypi.python.org/pypi/django-getenv
 
 Al crear la maquina virtual se podrá acceder desde el siguiente dominio local: {{cookiecutter.vm_hostname}}.lo
 

@@ -20,20 +20,12 @@ DEBIAN_FRONTEND=noninteractive sudo apt-get -y install python-pip
 DEBIAN_FRONTEND=noninteractive sudo apt-get -y install postgres
 DEBIAN_FRONTEND=noninteractive sudo apt-get -y install postgresql-contrib
 DEBIAN_FRONTEND=noninteractive sudo apt-get -y install postgresql-server-dev-all
-DEBIAN_FRONTEND=noninteractive sudo apt-get -y install nodejs-legacy
-DEBIAN_FRONTEND=noninteractive sudo apt-get -y install npm
 
 echo "################################################"
 echo "### Install python packages"
 echo "################################################"
 
 pip install --user -r project/requirements.txt
-
-echo "################################################"
-echo "### Install node packages"
-echo "################################################"
-
-npm install yuglify
 
 echo "################################################"
 echo "### Install pgweb"

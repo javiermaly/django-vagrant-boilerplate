@@ -4,9 +4,7 @@ echo "################################################"
 echo "### Configure directories"
 echo "################################################"
 
-mkdir -p project/assets
 mkdir -p project/locale
-mkdir -p project/media
 
 echo "################################################"
 echo "### Configure database"
