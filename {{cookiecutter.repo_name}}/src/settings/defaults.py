@@ -72,7 +72,6 @@ WSGI_APPLICATION = 'wsgi.application'
 ##
 ## Domains
 ##
-SITE_ID = 1
 ALLOWED_HOSTS = ['*']
 
 
