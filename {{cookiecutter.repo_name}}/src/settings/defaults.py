@@ -107,6 +107,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     'compressor.finders.CompressorFinder',
 )
+COMPRESS_OUTPUT_DIR = 'cache'
+COMPRESS_OFFLINE = True
 
 
 ##
