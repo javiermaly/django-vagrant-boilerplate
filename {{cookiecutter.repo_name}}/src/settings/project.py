@@ -14,22 +14,3 @@ INSTALLED_APPS += (
 )
 
 GRAPPELLI_ADMIN_TITLE = "Admin"
-
-PIPELINE_CSS = {
-    'stylesheets': {
-        'source_filenames': (
-        ),
-        'output_filename': 'stylesheets.css',
-        'extra_context': {
-            'media': 'screen,projection',
-        },
-    },
-}
-
-PIPELINE_JS = {
-    'scripts': {
-        'source_filenames': (
-        ),
-        'output_filename': 'scripts.js',
-    }
-}
