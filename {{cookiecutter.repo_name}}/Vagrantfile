@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
     config.ssh.forward_agent = true
     config.ssh.insert_key = false
 
-    config.vm.provision "file", source: "config/Envfile", destination: "/home/vagrant/.Envfile"
+    config.vm.provision "file", run: "always", source: "config/Envfile", destination: "/home/vagrant/.Envfile"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/init.sh"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/packages.sh"
     config.vm.provision "shell", keep_color: true, privileged: false, path: "config/setup.sh"

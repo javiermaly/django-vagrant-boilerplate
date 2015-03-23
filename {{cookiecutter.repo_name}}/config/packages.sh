@@ -25,6 +25,7 @@ echo "################################################"
 echo "### Install python packages"
 echo "################################################"
 
+pip install https://www.djangoproject.com/download/1.8b1/tarball/
 pip install --user -r project/requirements.txt
 
 echo "################################################"

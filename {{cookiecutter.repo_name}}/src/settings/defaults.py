@@ -18,6 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 ##
 DEBUG = env('DJANGO_DEBUG')
 TEMPLATE_DEBUG = DEBUG
+INTERNAL_IPS = (env('DJANGO_DEBUG_TOOLBAR_INTERNAL_IP'),)
 
 
 ##
@@ -145,6 +146,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'compressor',
+    'debug_toolbar',
 )
 
 
@@ -152,14 +154,6 @@ INSTALLED_APPS = (
 ## Django Test Runner
 ##
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
-
-
-##
-## Django Debug Tool Bar
-##
-if DEBUG:
-    INTERNAL_IPS = ('10.0.2.2',)
-    INSTALLED_APPS += ('debug_toolbar',)
 
 
 ##

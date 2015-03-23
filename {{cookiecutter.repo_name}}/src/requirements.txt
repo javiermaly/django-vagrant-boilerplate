@@ -1,9 +1,8 @@
 pillow
 coverage
 psycopg2
-django
+#django
 django-htmlmin
 django_compressor
 django-grappelli
 django-getenv
-django-debug-toolbar
