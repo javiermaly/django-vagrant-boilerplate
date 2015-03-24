@@ -4,10 +4,9 @@
 
 Contiene una maquina virtual con ubuntu 14.04 precofigurada para trabajar con Django y PostgreSQL.
 
-El proyecto esta pensando para crear aplicaciones 12 factor http://12factor.net/ se genera tanto un entorno de desarrollo en vagrant.
 
 - Vagrant para generar el entorno de desarrollo https://www.vagrantup.com/
-- Django 1.7 como framework de desarrollo https://www.djangoproject.com/
+- Django 1.8rc1 como framework de desarrollo https://www.djangoproject.com/
 - PostgreSQl como base de datos http://www.postgresql.org/
 - PsycoPG2 como driver de Postgres http://initd.org/psycopg/
 - Pillow para manipulacion de imagenes https://pypi.python.org/pypi/Pillow/
