@@ -1,7 +1,7 @@
 pillow
 coverage
 psycopg2
-django==1.8c1
+django
 django-htmlmin
 django_compressor
 django-grappelli
