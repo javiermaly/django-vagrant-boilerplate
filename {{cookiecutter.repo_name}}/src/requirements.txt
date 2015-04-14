@@ -6,3 +6,4 @@ django-htmlmin
 django_compressor
 django-grappelli
 django-getenv
+django-debug-toolbar
